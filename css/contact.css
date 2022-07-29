@@ -46,6 +46,27 @@ body {
     transition: 0.5s ease;
 }
 
+.active {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active i {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active a {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    transition: 1s ease;
+}
+
 
 /* if the width is less than 500px */
 

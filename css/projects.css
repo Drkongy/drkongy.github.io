@@ -130,6 +130,27 @@ body {
     }
 }
 
+.active {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active i {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active a {
+    background-color: #fff;
+    color: #202020;
+}
+
+.active:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff;
+    transition: 1s ease;
+}
+
 
 /*!------------------------------------ */
 
