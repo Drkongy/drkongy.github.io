@@ -1,0 +1,4 @@
+# ignore the .vscode folder
+.vscode
+# ignore the .git folder
+.git
