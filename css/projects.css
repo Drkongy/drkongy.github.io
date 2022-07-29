@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+    font: optional;
+    transition: 2s ease;
+    overflow-x: hidden;
+    border: relative;
+}
+
+
+/* gives a fancy scroll bar */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(61, 61, 61);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 2em;
+}
+
+
+/* this is for the navagation */
+
+.miniNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 1vh;
+    min-width: 0vh;
+    font-family: 'Acme', sans-serif;
+    font-weight: bold;
+    font: optional;
+    padding: 5px;
+    top: 0;
+    background-color: #202020;
+}
+
+.miniNav-container {
+    /* make the items in rows */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.miniNav-item {
+    /* make the items in rows */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s ease;
+    margin-left: 10px;
+}
+
+.miniNav-item a {
+    text-decoration: none;
+    color: #fff;
+    /* make items inline */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miniNav-item p {
+    margin-left: 10px;
+}
+
+.miniNav-item:hover {
+    background-color: #202020;
+}
+
+
+/* if the width is less than 500px */
+
+@media screen and (max-width: 850px) {
+    .miniNav-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .miniNav-container {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .miniNav-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .miniNav-container {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .miniNav p {
+        display: none;
+    }
+}
+
+
+/*!------------------------------------ */
+
+
+/* main items */
+
+
+/* This is for the text cr*/
+
+h1 {
+    text-align: center;
+    font-weight: Bold;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 30px #fff;
+    transition: 0.5s ease;
+    margin-bottom: 20px;
+}
+
+
+/* removes all the underlines from all of the refs */
+
+a {
+    text-decoration: none;
+}
+
+
+/* this is for the projects */
+
+.Projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    text-decoration: none;
+}
+
+.im img {
+    width: 0px;
+    height: 100px;
+}
+
+.Project {
+    width: 250px;
+    height: 300px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #fff;
+    margin: 10px;
+    padding: 10px;
+    background-color: #505050;
+}
+
+.ImageArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    background-size: cover;
+}
+
+.header_text {
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.ImageText {
+    font-family: 'Acme', sans-serif;
+    padding-top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.ImageText p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Project:nth-child(1) .ImageArea {
+    background-image: url(../images/Icon2.png);
+}
+
+.Project:nth-child(2) .ImageArea {
+    background-image: url(../images/Icon1.png);
+}
+
+.Project:nth-child(3) .ImageArea {
+    background-image: url(../images/Icon3.png);
+}
+
+.Project {
+    transition: 0.5s ease;
+}
+
+.Project:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    box-shadow: 0 0 20px #fff;
+}
+
+.icon {
+    /* remove text decor */
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-right: 10px;
+    transition: 1s ease;
+    /* make the icon at the botton of the div */
+}
+
+.icon:hover {
+    transition: 0.5s ease;
+    color: #202020;
+    text-shadow: 0 0 30px #fff;
+    /* increase in size */
+    transform: scale(1.1);
+}
+
+
+/* pads so it does not clip of the screen */
+
+.padder {
+    padding-top: 200px;
+}
+
+
+/* This is for the Footer*/
+
+.footer {
+    /* padding: 10px 0; */
+    background-color: #202020;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    transition: 2s ease;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 25px;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .social a:hover {
+    transition: 0.5s ease;
+    color: #000;
+    text-shadow: 0 0 20px #fff;
+}
+
+.footer .copyright {
+    text-align: center;
+    color: #fff;
+    background-color: #202020;
+    width: 100%;
+}
