@@ -22,6 +22,16 @@
     <title>Zeeshans Portfolio</title>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G5TW4SBCY0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G5TW4SBCY0');
+</script>
+
 <body>
     <style>
         body {
@@ -81,8 +91,8 @@
             <div class="item">
                 <p><i class="fas fa-globe-asia"></i>
                     <!-- open in new window -->
-                    <a href="http://kongolian.tech" target="_blank">
-                        kongolian.tech
+                    <a href="https://zeeit.co.uk" target="_blank">
+                        ZeeIT
                     </a>
                 </p>
             </div>
@@ -111,50 +121,18 @@
     </main>
 
 
-    <div class="uptime">
-        <i class="fas fa-server"></i>
-        <span>Uptime:</span>
-        <em>
-            <br>
-            <label id="UptimeL"></label>                    
-            <!-- on website load -->
-            <script>
-                setInterval(function() {
-                    var d = new Date();
-                    var days = d.getDay();
-                    var hours = d.getHours();
-                    var minutes = d.getMinutes();
-                    var seconds = d.getSeconds();
-
-                    // only show the days, hours, minutes if they are greater than 0 
-                    if (days > 0) {
-                        document.getElementById("UptimeL").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds";
-                    } else if (hours > 0) {
-                        document.getElementById("UptimeL").innerHTML = hours + " hours " + minutes + " minutes " + seconds + " seconds";
-                    } else if (minutes > 0) {
-                        document.getElementById("UptimeL").innerHTML = minutes + " minutes " + seconds + " seconds";
-                    } else {
-                        document.getElementById("UptimeL").innerHTML = seconds + " seconds";
-                    }
-                }, 1000);
-            </script>                   
-        </em>
-    </div>
-
-
 
 
     <div class="social">
         <a href="https://github.com/Drkongy" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://discord.gg/cYCsDfyPAv" target="_blank"><i class="fab fa-discord"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://twitter.com/ZeeIT_LTD" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/zees.it/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://play.google.com/store/apps/developer?id=Drkongy" target="_blank"><i class="fab fa-google-play"></i></a>
     </div>
 
-
     <p class="copyright">
-        &copy; Copyright 2023 Zeeshan
+        &copy; Copyright 2024 Zeeshan
     </p>
 
 

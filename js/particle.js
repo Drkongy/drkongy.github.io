@@ -141,7 +141,7 @@ function update() {
     if (time_to_recreate) {
         if (particles.length < init_num) {
             popolate(1);
-            console.log("Sperm");
+            console.log("Snake Deployed - Zee");
         }
     }
     clear();
